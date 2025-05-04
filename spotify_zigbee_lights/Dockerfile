@@ -1,10 +1,7 @@
+FROM python:3.10-slim
 
-FROM python:3.11-slim
+RUN pip install --no-cache-dir requests numpy paho-mqtt spotipy
 
-WORKDIR /app
+COPY run.py /run.py
 
-COPY run.py .
-
-RUN pip install spotipy paho-mqtt
-
-CMD ["python", "run.py"]
+CMD [ "python", "/run.py" ]

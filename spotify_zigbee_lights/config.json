@@ -1,22 +1,22 @@
-
 {
   "name": "Spotify Zigbee Lights",
   "version": "1.0.0",
   "slug": "spotify_zigbee_lights",
-  "description": "Beat-reactive lighting effects with Spotify and Zigbee2MQTT",
+  "description": "Sync Zigbee RGB lights with Spotify beats.",
   "startup": "application",
   "boot": "auto",
+  "arch": ["amd64", "aarch64", "armv7"],
+  "hassio_api": true,
+  "homeassistant_api": true,
   "options": {
     "spotify_client_id": "",
     "spotify_client_secret": "",
-    "mqtt_broker": "mqtt://core-mosquitto:1883",
-    "bulbs": ["zigbee_bulb_1", "zigbee_bulb_2"]
+    "zigbee_devices": []
   },
   "schema": {
     "spotify_client_id": "str",
     "spotify_client_secret": "str",
-    "mqtt_broker": "str",
-    "bulbs": ["str"]
+    "zigbee_devices": ["str"]
   },
   "image": "local/spotify_zigbee_lights"
 }
