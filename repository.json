@@ -1,0 +1,8 @@
+{
+  "name": "Spotify Zigbee Add-on Repo",
+  "url": "https://github.com/StealthyPancake52/spotify-zigbee-ha-addon",
+  "maintainer": "StealthyPancake52",
+  "addons": [
+    "spotify_zigbee_lights"
+  ]
+}
