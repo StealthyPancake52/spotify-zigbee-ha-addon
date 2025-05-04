@@ -18,5 +18,4 @@
     "spotify_client_secret": "str",
     "zigbee_devices": ["str"]
   },
-  "image": "local/spotify_zigbee_lights"
 }
