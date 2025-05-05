@@ -2,12 +2,15 @@
   "name": "Spotify Zigbee Lights",
   "version": "1.0.0",
   "slug": "spotify_zigbee_lights",
-  "description": "Sync Zigbee RGB lights with Spotify beats.",
-  "startup": "application",
+  "description": "React to Spotify music with Zigbee lights",
+  "startup": "services",
   "boot": "auto",
-  "arch": ["amd64", "aarch64", "armv7"],
-  "hassio_api": true,
-  "homeassistant_api": true,
+  "init": false,
+  "panel": false,
+  "watchdog": "true",
+  "ingress": false,
+  "host_network": true,
+  "privileged": ["SYS_ADMIN"],
   "options": {
     "spotify_client_id": "",
     "spotify_client_secret": "",
@@ -15,7 +18,4 @@
   },
   "schema": {
     "spotify_client_id": "str",
-    "spotify_client_secret": "str",
-    "zigbee_devices": ["str"]
-  }
-}
+    "spotify_client_secret": "
