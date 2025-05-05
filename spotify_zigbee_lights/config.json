@@ -2,15 +2,12 @@
   "name": "Spotify Zigbee Lights",
   "version": "1.0.0",
   "slug": "spotify_zigbee_lights",
-  "description": "React to Spotify music with Zigbee lights",
-  "startup": "services",
+  "description": "Sync Zigbee RGB lights with Spotify beats.",
+  "startup": "application",
   "boot": "auto",
-  "init": false,
-  "panel": false,
-  "watchdog": "true",
-  "ingress": false,
-  "host_network": true,
-  "privileged": ["SYS_ADMIN"],
+  "arch": ["amd64", "aarch64", "armv7"],
+  "hassio_api": true,
+  "homeassistant_api": true,
   "options": {
     "spotify_client_id": "",
     "spotify_client_secret": "",
@@ -19,6 +16,10 @@
   "schema": {
     "spotify_client_id": "str",
     "spotify_client_secret": "str",
+<<<<<<< HEAD
     "zigbee_devices": "list"
+=======
+    "zigbee_devices": ["str"]
+>>>>>>> parent of f8c67a1 (Update config.json)
   }
 }
