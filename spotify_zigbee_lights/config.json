@@ -18,4 +18,7 @@
   },
   "schema": {
     "spotify_client_id": "str",
-    "spotify_client_secret": "
+    "spotify_client_secret": "str",
+    "zigbee_devices": "list"
+  }
+}
